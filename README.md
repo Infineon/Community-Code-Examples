@@ -22,6 +22,9 @@ Thanks, and happy coding!
 |[derkst](https://github.com/derkst) | [Cypress-PSOC-OLED](https://github.com/derkst/Cypress-PSOC-OLED) | PSoC Creator | TSSD1306 OLED display driver and graphics library for the Cypress PSOC family of microcontrollers|
 |[kmmankad](https://github.com/kmmankad) | [ENC28J60-PSoC3](https://github.com/kmmankad/ENC28J60-PSoC3) | PSoC Creator | A project that aims to create an Internet connected PSoC3 device based on the ENC28J60|
 |[gbmhunter](https://github.com/gbmhunter) | [MFixedPoint](https://github.com/gbmhunter/MFixedPoint) | PSoC Creator | MFixedPoint is a header-only fixed-point C++ library suitable for fast arithmetic operations for PSoC|
+|[clementleger](https://github.com/clementleger) | [cypress_linux_tools](https://github.com/clementleger/cypress_linux_tools) | Linux | Tools to build and flash cypress PSoC Creator projects under Linux|
+
+
 
 
 
