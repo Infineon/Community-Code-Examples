@@ -19,5 +19,10 @@ Thanks, and happy coding!
 |[kiml](https://github.com/kiml) | [PSOC_programmer](https://github.com/kiml/PSOC_programmer) | Unix | Open source Unix (Linux/Mac) tools to manipulate hex files and program a PSoC5 via FX2 USB interface (assumes CY8CKIT-050).|
 |[sparkfun](https://github.com/sparkfun) | [PSoC_Arduino_Support](https://github.com/sparkfun/PSoC_Arduino_Support) | Arduino IDE | Support projects for PSoC processor support within the Arduino IDE.|
 |[kiml](https://github.com/kiml) | [PSOC_compiler](https://github.com/kiml/PSOC_compiler) | ARM GCC cross compiler | Tutorial/starter code for setting up GCC for PSOC5 (ARM) in an open-source baremetal configuration.|
+|[derkst](https://github.com/derkst) | [Cypress-PSOC-OLED](https://github.com/derkst/Cypress-PSOC-OLED) | PSoC Creator | TSSD1306 OLED display driver and graphics library for the Cypress PSOC family of microcontrollers|
+|[kmmankad](https://github.com/kmmankad) | [ENC28J60-PSoC3](https://github.com/kmmankad/ENC28J60-PSoC3) | PSoC Creator | A project that aims to create an Internet connected PSoC3 device based on the ENC28J60|
+|[gbmhunter](https://github.com/gbmhunter) | [MFixedPoint](https://github.com/gbmhunter/MFixedPoint) | PSoC Creator | MFixedPoint is a header-only fixed-point C++ library suitable for fast arithmetic operations for PSoC|
+
+
 
 
