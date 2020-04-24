@@ -121,6 +121,7 @@ PREBUILD=
 # Custom post-build commands to run.
 POSTBUILD=
 
+CY_IGNORE=./design_deps
 
 ################################################################################
 # Paths

@@ -12,6 +12,7 @@ mtb_training/session*/mtb_*/libs/*
 mtb_training/session*/mtb_*/.*
 mtb_training/session*/mtb_*/*.init
 mtb_training/session*/mtb_*/build/
+mtb_training/session*/.*
 
 
 
