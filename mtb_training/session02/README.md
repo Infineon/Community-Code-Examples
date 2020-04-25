@@ -12,8 +12,8 @@ This repository contains exercises covered in the second session of trainings on
 * [ModusToolbox 2.1](https://www.cypress.com/products/modustoolbox-software-environment)
 
 
-## Using the Exercises
-The PowerPoint presentation explains the digital peripherals and the motivation behind the exercises. The step by step instructions to import the exercises into Eclipse IDE is available in the file Exercises_ReadMe.pdf. 
+## Using the Material
+The PowerPoint presentation has the content used in the training. The step by step instructions to import the exercises into Eclipse IDE is available in the file Exercises_ReadMe.pdf. 
 
 
 
