@@ -1,6 +1,6 @@
 ## ModusToolbox Training Series
 
-This repository contains material used for the live training sessions conducted for Top [Cypress Developer Community (CDC)](https://community.cypress.com/welcome) contributors. Win a chance to be part of this series by being among the top contributors in the CDC. Start today, the community awaits you!
+This repository contains material used for the live training sessions conducted for Top [Cypress Developer Community (CDC)](https://community.cypress.com/welcome) contributors. Contribute in Cypress Developer Community CDC3.0 to be part of this training series.  Start today, the community awaits you!
 
 ## Supported Kits
 *	[PSoC6 BLE Pioneer Kit](https://www.cypress.com/documentation/development-kitsboards/psoc-6-ble-pioneer-kit-cy8ckit-062-ble)
