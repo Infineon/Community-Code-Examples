@@ -1,10 +1,10 @@
 # This list of files to ignore includes common, tool- or user-specific files that
-# are typically not checked into a version control system (VCS). It is a superset 
+# are typically not checked into a version control system (VCS). It is a superset
 # of such files. You may want to add others, especially if you use a tool not listed
 # here. You can remove those that do not apply to you.
-# 
-# The .gitignore file is intended for the git VCS. For another VCS you would specify 
-# which files to ignore in whatever form your VCS requires. If you do not check your 
+#
+# The .gitignore file is intended for the git VCS. For another VCS you would specify
+# which files to ignore in whatever form your VCS requires. If you do not check your
 # code into a VCS, you can ignore the .gitignore file.
 
 # Training specific
