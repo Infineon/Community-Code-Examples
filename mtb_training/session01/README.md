@@ -13,7 +13,7 @@ This repository contains the training materials for topics covered in the first 
 
 
 ## Using the Material
-The PowerPoint presentation has the content used in the training. To go ahead with the training, you need to download certain pre-requisites mentioned in the Pre-Requisites.pdf document.
+The file _Introduction_to_ModusToolbox.pdf_ has the slides used in the training. To go ahead with the training, you need to download certain pre-requisites mentioned in the _Pre-Requisites.pdf_ document.
 
 
 

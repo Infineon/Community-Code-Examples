@@ -13,7 +13,7 @@ This repository contains exercises covered in the second session of trainings on
 
 
 ## Using the Material
-The PowerPoint presentation has the content used in the training. The step by step instructions to import the exercises into Eclipse IDE is available in the file Exercises_ReadMe.pdf. 
+The file _DigitalPeripherals.pdf_ has the slides used in the training. The step by step instructions to import the exercises into Eclipse IDE is available in the file _Exercises_ReadMe.pdf_. 
 
 
 
