@@ -1,7 +1,7 @@
 # Interfacing OLED Display with PSoC 6 using ModusToolBox 2.1
 
 This example demonstrates how to interface SSD1306 OLED display with PSoC 6 using Eclipse IDE for ModusToolbox™. 
-The working of this example is explained in detail in this blog post - [Interfacing OLED Display with PSoC 6 using ModusToolBox 2.1](https://community.cypress.com/community/software-forums/modustoolbox/blog/2020/07/31/interfacing-dht-11-with-psoc-6-using-modustoolbox-21)
+The working of this example is explained in detail in this blog post - [Interfacing OLED Display with PSoC 6 using ModusToolBox 2.1](https://community.cypress.com/community/software-forums/modustoolbox/blog/2020/09/08/interfacing-oled-display-with-psoc-6-using-modustoolbox-21)
 
 ## Hardware Setup
 
