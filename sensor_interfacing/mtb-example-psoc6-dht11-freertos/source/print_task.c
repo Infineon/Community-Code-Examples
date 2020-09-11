@@ -62,8 +62,8 @@ void Print_Task(void* pvParameters)
 	/* Variable to check if connection error message is already displayed */
 	bool conn_err_displayed = false;
 
-	/* Variable to store temperature and humidity values */
-	struct readings DHT_reading = {0, 0};    /* Variables to store temperature and humidity values */
+	/* Variables to store temperature and humidity values */
+	struct readings DHT_reading = {0, 0};   
 
 	for(;;)
 	{

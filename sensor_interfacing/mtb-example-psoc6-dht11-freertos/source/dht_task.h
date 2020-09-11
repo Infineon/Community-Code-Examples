@@ -44,7 +44,7 @@
 
 #include "main.h"
 
-/* Sensor timeout duration can be chnaged here */
+/* Sensor timeout duration can be changed here */
 #define timeout_duration 100
 
 float Fraction_Convert(uint8_t num);
