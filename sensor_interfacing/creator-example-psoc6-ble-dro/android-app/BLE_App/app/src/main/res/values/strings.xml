@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PSoC 6 DRO App</string>
+    <string name="title_activity_control">ControlActivity</string>
+
+    <string name="no_ble">BLE not supported</string>
+
+    <!-- Misc items -->
+    <string name="zero">0</string>
+    <string name="refreshText">Pull Down to Refresh</string>
+</resources>

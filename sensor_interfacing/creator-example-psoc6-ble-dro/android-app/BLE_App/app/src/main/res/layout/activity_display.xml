@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="50px"
+                android:text="X axis"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/editTextNumberX"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:inputType="number"
+                android:padding="0px"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="50px"
+                android:text="Y axis"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/editTextNumberY"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:inputType="number"
+                android:padding="0px"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="50px"
+                android:text="Z axis"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/editTextNumberZ"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:ems="10"
+                android:inputType="number"
+                android:padding="0px"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayoutMachineParam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10px"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout6">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewfslength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:text="FS Length"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/textViewfscount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:text="FS Count"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="45dp"
+                tools:layout_editor_absoluteY="584dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewXcalibrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X axis"
+                android:textSize="24sp"
+                tools:layout_editor_absoluteX="45dp"
+                tools:layout_editor_absoluteY="584dp" />
+
+            <EditText
+                android:id="@+id/editTextNumberXLength"
+                android:layout_width="116dp"
+                android:layout_height="39dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textAlignment="center"
+                tools:layout_editor_absoluteX="133dp"
+                tools:layout_editor_absoluteY="573dp" />
+
+            <EditText
+                android:id="@+id/editTextNumberXCount"
+                android:layout_width="116dp"
+                android:layout_height="39dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewYcalibrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Y axis"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editTextNumberYLength"
+                android:layout_width="116dp"
+                android:layout_height="39dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editTextNumberYCount"
+                android:layout_width="116dp"
+                android:layout_height="39dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewZcalibrate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Z axis"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/editTextNumberZLength"
+                android:layout_width="116dp"
+                android:layout_height="39dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/editTextNumberZCount"
+                android:layout_width="116dp"
+                android:layout_height="39dp"
+                android:ems="10"
+                android:inputType="number"
+                android:textAlignment="center" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tableLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10px" />
+
+        </TableRow>
+    </TableLayout>
+
+    <Button
+        android:id="@+id/buttonsetmachparam"
+        android:layout_width="350px"
+        android:layout_height="150px"
+        android:layout_column="0"
+        android:text="Set Machine\nParameters"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tableLayout6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonSetWorkspace0"
+        android:layout_width="350px"
+        android:layout_height="150px"
+        android:layout_column="1"
+        android:text="Workspace Zero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tableLayout6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonsave"
+        android:layout_width="350px"
+        android:layout_height="150px"
+        android:text="Save"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayoutMachineParam" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
