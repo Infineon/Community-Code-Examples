@@ -6,7 +6,7 @@ Here are the steps to import the projects into Eclipse IDE workspace
   git clone https://github.com/cypresssemiconductorco/Community-Code-Examples.git
   ```
 
-2. You will find the example project in the path: community-code-examples/sensor_interfacing/mtb-psoc6-btn8982-motor-control/
+2. You will find the example project in the path: community-code-examples/sensor_interfacing/cce-psoc6-btn8982-motor-control/
 
 3. Open ModusToolbox and create a workspace folder of choice.
 
