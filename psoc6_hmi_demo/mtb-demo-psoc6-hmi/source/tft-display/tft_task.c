@@ -130,7 +130,7 @@ void tft_task(void *arg)
 
     for(;;)
     {
-    	GUI_Delay(GUI_DELAY);
+        GUI_Delay(GUI_DELAY);
     }
 }
 

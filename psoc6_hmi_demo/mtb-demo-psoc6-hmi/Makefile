@@ -35,15 +35,12 @@
 # valid URL exists in the application, run 'make getlibs' to fetch BSP contents
 # and update or regenerate launch configurations for your IDE.
 TARGET=CY8CKIT-062S2-43012
-ifeq ($(TARGET), CYW9P62S1-43012EVB-01)
-$(error The selected Kit (CYW9P62S1-43012EVB-01) does not have enough pins to support the CY8CKIT-028-TFT shield, please select a supported kit.)
-endif 
 
 # Name of application (used to derive name of final linked file).
 # 
 # If APPNAME is edited, ensure to update or regenerate launch 
 # configurations for your IDE.
-APPNAME=mtb-example-psoc6-emwin-tft-freertos
+APPNAME=mtb-demo-psoc6-hmi
 
 # Name of toolchain to use. Options include:
 #

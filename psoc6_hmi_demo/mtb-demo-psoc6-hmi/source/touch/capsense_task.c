@@ -232,28 +232,28 @@ static void process_touch(void)
     /* Detect new touch on Button0 */
     if((0u != button0_status) && (0u == button0_status_prev))
     {
-    	BUTTON_SetBitmap(btn0_handle, BUTTON_BI_UNPRESSED, &btn_on);
-    	WM_SetFocus(btn0_handle);
-    	display_time = true;
-    	display_time_update = true;
+        BUTTON_SetBitmap(btn0_handle, BUTTON_BI_UNPRESSED, &btn_on);
+        WM_SetFocus(btn0_handle);
+        display_time = true;
+        display_time_update = true;
     }
     if((0u == button0_status) && (1u == button0_status_prev))
-	{
-    	BUTTON_SetBitmap(btn0_handle, BUTTON_BI_UNPRESSED, &btn_off);
-	}
+    {
+        BUTTON_SetBitmap(btn0_handle, BUTTON_BI_UNPRESSED, &btn_off);
+    }
 
     /* Detect new touch on Button1 */
     if((0u != button1_status) && (0u == button1_status_prev))
     {
-		BUTTON_SetBitmap(btn1_handle, BUTTON_BI_UNPRESSED, &btn_on);
-		display_time = false;
-		display_loc_weather_update = true;
-		WM_SetFocus(btn1_handle);
+        BUTTON_SetBitmap(btn1_handle, BUTTON_BI_UNPRESSED, &btn_on);
+        display_time = false;
+        display_loc_weather_update = true;
+        WM_SetFocus(btn1_handle);
     }
 
     if((0u == button1_status) && (1u == button1_status_prev))
     {
-    	BUTTON_SetBitmap(btn1_handle, BUTTON_BI_UNPRESSED, &btn_off);
+        BUTTON_SetBitmap(btn1_handle, BUTTON_BI_UNPRESSED, &btn_off);
     }
 
     button0_status_prev = button0_status;

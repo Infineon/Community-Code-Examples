@@ -629,59 +629,59 @@ static void _cbDialog(WM_MESSAGE * pMsg) {
   switch (pMsg->MsgId) {
   case WM_INIT_DIALOG:
 
-	  /* Set the GUI background color. */
-	  hItem = pMsg->hWin;
-	  WINDOW_SetBkColor(hItem, GUI_BLACK);
+      /* Set the GUI background color. */
+      hItem = pMsg->hWin;
+      WINDOW_SetBkColor(hItem, GUI_BLACK);
 
-	  // Initialization of 'Image'
-	  //
-	  hItem = WM_GetDialogItem(pMsg->hWin, ID_IMAGE_0);
-	  pData = _GetImageById(ID_IMAGE_0_IMAGE_0, &FileSize);
-	  IMAGE_SetBMP(hItem, pData, FileSize);
-	  //
-	  // Initialization of 'Image'
-	  //
-	  wifi_status_handle = WM_GetDialogItem(pMsg->hWin, ID_IMAGE_1);
+      // Initialization of 'Image'
+      //
+      hItem = WM_GetDialogItem(pMsg->hWin, ID_IMAGE_0);
+      pData = _GetImageById(ID_IMAGE_0_IMAGE_0, &FileSize);
+      IMAGE_SetBMP(hItem, pData, FileSize);
+      //
+      // Initialization of 'Image'
+      //
+      wifi_status_handle = WM_GetDialogItem(pMsg->hWin, ID_IMAGE_1);
 
-	  pData = _GetImageById(ID_IMAGE_1_IMAGE_0, &FileSize);
-	  IMAGE_SetBMP(wifi_status_handle, pData, FileSize);
+      pData = _GetImageById(ID_IMAGE_1_IMAGE_0, &FileSize);
+      IMAGE_SetBMP(wifi_status_handle, pData, FileSize);
 
-	  hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_0);
-	  TEXT_SetTextColor(hItem, GUI_WHITE);
-	  sprintf(text,"TIME");
-	  TEXT_SetText(hItem, text);
+      hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_0);
+      TEXT_SetTextColor(hItem, GUI_WHITE);
+      sprintf(text,"TIME");
+      TEXT_SetText(hItem, text);
 
-	  hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_1);
-	  TEXT_SetTextColor(hItem, GUI_WHITE);
-	  sprintf(text,"WHEATHER");
-	  TEXT_SetText(hItem, text);
+      hItem = WM_GetDialogItem(pMsg->hWin, ID_TEXT_1);
+      TEXT_SetTextColor(hItem, GUI_WHITE);
+      sprintf(text,"WHEATHER");
+      TEXT_SetText(hItem, text);
 
-	  loc_handle = WM_GetDialogItem(pMsg->hWin, ID_TEXT_2);
-	  sprintf(text, "Bengaluru");
-	  TEXT_SetFont(loc_handle, GUI_FONT_20B_1);
-	  TEXT_SetTextColor(loc_handle, GUI_WHITE);
-	  TEXT_SetText(loc_handle, text);
+      loc_handle = WM_GetDialogItem(pMsg->hWin, ID_TEXT_2);
+      sprintf(text, "Bengaluru");
+      TEXT_SetFont(loc_handle, GUI_FONT_20B_1);
+      TEXT_SetTextColor(loc_handle, GUI_WHITE);
+      TEXT_SetText(loc_handle, text);
 
-	  date_handle = WM_GetDialogItem(pMsg->hWin, ID_TEXT_3);
-	  sprintf(text,"Sat, Jan 01");
-	  TEXT_SetFont(date_handle, GUI_FONT_16B_1);
-	  TEXT_SetTextColor(date_handle, GUI_ORANGE);
-	  TEXT_SetText(date_handle, text);
+      date_handle = WM_GetDialogItem(pMsg->hWin, ID_TEXT_3);
+      sprintf(text,"Sat, Jan 01");
+      TEXT_SetFont(date_handle, GUI_FONT_16B_1);
+      TEXT_SetTextColor(date_handle, GUI_ORANGE);
+      TEXT_SetText(date_handle, text);
 
-	  text_handle = WM_GetDialogItem(pMsg->hWin, ID_TEXT_4);
-	  sprintf(text,"%02d:%02d", 0, 0);
-	  TEXT_SetTextAlign(text_handle, GUI_ALIGN_HCENTER);
-	  TEXT_SetFont(text_handle, GUI_FONT_D32);
-	  TEXT_SetTextColor(text_handle, GUI_ORANGE);
-	  TEXT_SetText(text_handle, text);
+      text_handle = WM_GetDialogItem(pMsg->hWin, ID_TEXT_4);
+      sprintf(text,"%02d:%02d", 0, 0);
+      TEXT_SetTextAlign(text_handle, GUI_ALIGN_HCENTER);
+      TEXT_SetFont(text_handle, GUI_FONT_D32);
+      TEXT_SetTextColor(text_handle, GUI_ORANGE);
+      TEXT_SetText(text_handle, text);
 
-	  btn0_handle = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_0);
-	  BUTTON_SetText(btn0_handle, " ");
-	  BUTTON_SetBitmap(btn0_handle, BUTTON_BI_UNPRESSED, &btn_off);
+      btn0_handle = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_0);
+      BUTTON_SetText(btn0_handle, " ");
+      BUTTON_SetBitmap(btn0_handle, BUTTON_BI_UNPRESSED, &btn_off);
 
-	  btn1_handle = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_1);
-	  BUTTON_SetText(btn1_handle, " ");
-	  BUTTON_SetBitmap(btn1_handle, BUTTON_BI_UNPRESSED, &btn_off);
+      btn1_handle = WM_GetDialogItem(pMsg->hWin, ID_BUTTON_1);
+      BUTTON_SetText(btn1_handle, " ");
+      BUTTON_SetBitmap(btn1_handle, BUTTON_BI_UNPRESSED, &btn_off);
 
 
     // USER START (Optionally insert additional code for further widget initialization)

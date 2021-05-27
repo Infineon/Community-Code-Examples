@@ -290,26 +290,26 @@ void http_client_task(void *pvParameters)
     /* Initialize Wi-Fi connection manager. */
     result = cy_wcm_init(&wifi_config);
 
-	if (result != CY_RSLT_SUCCESS)
-	{
-		printf("Wi-Fi Connection Manager initialization failed! Error code: 0x%08"PRIx32"\n", (uint32_t)result);
-		CY_ASSERT(0);
-	}
-	printf("Wi-Fi Connection Manager initialized.\r\n");
+    if (result != CY_RSLT_SUCCESS)
+    {
+        printf("Wi-Fi Connection Manager initialization failed! Error code: 0x%08"PRIx32"\n", (uint32_t)result);
+        CY_ASSERT(0);
+    }
+    printf("Wi-Fi Connection Manager initialized.\r\n");
 
-	/* Connect to Wi-Fi AP */
-	result = connect_to_wifi_ap();
-	if(result!= CY_RSLT_SUCCESS )
-	{
-		printf("\n Failed to connect to Wi-Fi AP! Error code: 0x%08"PRIx32"\n", (uint32_t)result);
-		CY_ASSERT(0);
-	}
-	else
-	{
-		is_wifi_connected = true;
-		IMAGE_SetBitmap(wifi_status_handle, &bmwifi_conn);
-		printf("Wi-Fi Connected\n");
-	}
+    /* Connect to Wi-Fi AP */
+    result = connect_to_wifi_ap();
+    if(result!= CY_RSLT_SUCCESS )
+    {
+        printf("\n Failed to connect to Wi-Fi AP! Error code: 0x%08"PRIx32"\n", (uint32_t)result);
+        CY_ASSERT(0);
+    }
+    else
+    {
+        is_wifi_connected = true;
+        IMAGE_SetBitmap(wifi_status_handle, &bmwifi_conn);
+        printf("Wi-Fi Connected\n");
+    }
 
     /* Initialize the HTTP Client Library. */
     result = cy_http_client_init();
@@ -320,30 +320,30 @@ void http_client_task(void *pvParameters)
     }
 
     /* Initialize the default time and alarm time. */
-    	current_time = default_time;
-    	alarm_time.tm_sec = 0;
-    	alarm_time.tm_mday = 1;
+        current_time = default_time;
+        alarm_time.tm_sec = 0;
+        alarm_time.tm_mday = 1;
 
-    	/* Initialize RTC. */
-    	result = cyhal_rtc_init(&rtc_obj);
-    	if(result != CY_RSLT_SUCCESS)
-    	{
-    		printf("Failed to initialize RTC!\n");
-    	}
+        /* Initialize RTC. */
+        result = cyhal_rtc_init(&rtc_obj);
+        if(result != CY_RSLT_SUCCESS)
+        {
+            printf("Failed to initialize RTC!\n");
+        }
 
-    	/* Set the default time to RTC. */
-    	cyhal_rtc_write(&rtc_obj, &default_time);
+        /* Set the default time to RTC. */
+        cyhal_rtc_write(&rtc_obj, &default_time);
 
-    	/* Enable match of seconds to trigger RTC alarm callback function and
-    	 * set the RTC alarm.
-    	 */
-    	active_alarm.en_sec = 1;
-    	cyhal_rtc_set_alarm(&rtc_obj, &alarm_time, active_alarm);
+        /* Enable match of seconds to trigger RTC alarm callback function and
+         * set the RTC alarm.
+         */
+        active_alarm.en_sec = 1;
+        cyhal_rtc_set_alarm(&rtc_obj, &alarm_time, active_alarm);
 
-    	/* Register and enable RTC alarm callback. The callback is invoked
-    	 * every minute */
-    	cyhal_rtc_register_callback(&rtc_obj, rtc_cb, NULL);
-    	cyhal_rtc_enable_event(&rtc_obj, CYHAL_RTC_ALARM, 5, true);
+        /* Register and enable RTC alarm callback. The callback is invoked
+         * every minute */
+        cyhal_rtc_register_callback(&rtc_obj, rtc_cb, NULL);
+        cyhal_rtc_enable_event(&rtc_obj, CYHAL_RTC_ALARM, 5, true);
 
     http_client_cmd = GET_CMD;
     xQueueSend(http_client_cmd_q, &http_client_cmd, RTOS_TICKS_TO_WAIT);
@@ -402,52 +402,52 @@ void http_client_task(void *pvParameters)
         }
 
         if(display_time_update && display_time)
-		{
-			display_time_update = false;
-			cyhal_rtc_read(&rtc_obj, &current_time);
-			sprintf(text,"%02d:%02d", current_time.tm_hour, current_time.tm_min);
-			TEXT_SetFont(text_handle, GUI_FONT_D32);
-			TEXT_SetTextColor(text_handle, GUI_ORANGE);
-			TEXT_SetText(text_handle, text);
+        {
+            display_time_update = false;
+            cyhal_rtc_read(&rtc_obj, &current_time);
+            sprintf(text,"%02d:%02d", current_time.tm_hour, current_time.tm_min);
+            TEXT_SetFont(text_handle, GUI_FONT_D32);
+            TEXT_SetTextColor(text_handle, GUI_ORANGE);
+            TEXT_SetText(text_handle, text);
 
-			switch(current_time.tm_wday)
-			{
-			 case 0:
-				 sprintf(text,"Sun, %s %02d", months[current_time.tm_mon], current_time.tm_mday);
-				 break;
-			 case 1:
-				 sprintf(text,"Mon, %s %02d", months[current_time.tm_mon], current_time.tm_mday);
-				 break;
-			 case 2:
-				 sprintf(text,"Tue, %s %02d", months[current_time.tm_mon], current_time.tm_mday);
-				 break;
-			 case 3:
-				 sprintf(text,"Wed, %s %02d", months[current_time.tm_mon], current_time.tm_mday);
-				 break;
-			 case 4:
-				 sprintf(text,"Thu, %s %02d", months[current_time.tm_mon], current_time.tm_mday);
-				 break;
-			 case 5:
-				 sprintf(text,"Fri, %s %02d", months[current_time.tm_mon], current_time.tm_mday);
-				 break;
-			 case 6:
-				 sprintf(text,"Sat, %s %02d", months[current_time.tm_mon], current_time.tm_mday);
-				 break;
-			}
-			TEXT_SetFont(date_handle, GUI_FONT_16B_1);
-			TEXT_SetTextColor(date_handle, GUI_ORANGE);
-			TEXT_SetText(date_handle, text);
+            switch(current_time.tm_wday)
+            {
+             case 0:
+                 sprintf(text,"Sun, %s %02d", months[current_time.tm_mon], current_time.tm_mday);
+                 break;
+             case 1:
+                 sprintf(text,"Mon, %s %02d", months[current_time.tm_mon], current_time.tm_mday);
+                 break;
+             case 2:
+                 sprintf(text,"Tue, %s %02d", months[current_time.tm_mon], current_time.tm_mday);
+                 break;
+             case 3:
+                 sprintf(text,"Wed, %s %02d", months[current_time.tm_mon], current_time.tm_mday);
+                 break;
+             case 4:
+                 sprintf(text,"Thu, %s %02d", months[current_time.tm_mon], current_time.tm_mday);
+                 break;
+             case 5:
+                 sprintf(text,"Fri, %s %02d", months[current_time.tm_mon], current_time.tm_mday);
+                 break;
+             case 6:
+                 sprintf(text,"Sat, %s %02d", months[current_time.tm_mon], current_time.tm_mday);
+                 break;
+            }
+            TEXT_SetFont(date_handle, GUI_FONT_16B_1);
+            TEXT_SetTextColor(date_handle, GUI_ORANGE);
+            TEXT_SetText(date_handle, text);
 
-			/* Update City */
-			TEXT_SetFont(loc_handle, GUI_FONT_20B_1);
-			TEXT_SetTextColor(loc_handle, GUI_WHITE);
-			TEXT_SetText(loc_handle, city_info);
-		}
+            /* Update City */
+            TEXT_SetFont(loc_handle, GUI_FONT_20B_1);
+            TEXT_SetTextColor(loc_handle, GUI_WHITE);
+            TEXT_SetText(loc_handle, city_info);
+        }
 
-		if(display_loc_weather_update && (!display_time))
-		{
-			update_display_loc_weather();
-		}
+        if(display_loc_weather_update && (!display_time))
+        {
+            update_display_loc_weather();
+        }
 
     }
 }
