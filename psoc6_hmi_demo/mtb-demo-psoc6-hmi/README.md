@@ -1,6 +1,6 @@
-# PSoC 6 MCU: emWin TFT in FreeRTOS
+# PSoC 6 MCU: HMI Demo
 
-This example demonstrates a simple HMI application using PSoC 6 MCU and CYW43012. The application fetches current date & time, location and weather foreact from remote HTTP servers. TFT display shows the data fetched from these remote servers and using the CapSense button widget, users can select the data (time or weather) to be dispayed.
+This example demonstrates a simple HMI application using PSoC 6 MCU and CYW43012. The application fetches current date & time, location and weather forecaste from remote HTTP servers. TFT display shows the data fetched from these remote servers and using the CapSense button widget, users can select the data (time or weather) to be dispayed.
 
 ## Requirements
 
