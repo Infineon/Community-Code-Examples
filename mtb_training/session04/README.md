@@ -9,10 +9,13 @@ This repository contains the exercise covered in the fourth session of trainings
 - [PSoC 6 WiFi-BT Pioneer Kit](https://www.cypress.com/CY8CKIT-062-WiFi-BT) (CY8CKIT-062-WIFI-BT)
 
 ## Supported Software
-* [ModusToolbox 2.1](https://www.cypress.com/products/modustoolbox-software-environment)
+* [ModusToolbox&trade; 2.1](https://www.cypress.com/products/modustoolbox-software-environment)
 
 ## Using the Material
 The file _AnyCloud_WiFi_Design_Flow.pdf_ has the slides used in the training. The step by step instructions to import the exercises is provided below.
+
+## Training Video
+This blog post covering the training contents and the video can be obtained [here](https://community.cypress.com/t5/ModusToolbox-Blog/Session-4-AnyCloud-WIFI-Design-Flow/ba-p/247116). 
 
 ## Software Setup
 - Install a terminal emulator if you don't have one. Instructions in this document use [Tera Term](https://ttssh2.osdn.jp/index.html.en).

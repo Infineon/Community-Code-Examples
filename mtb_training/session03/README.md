@@ -1,4 +1,4 @@
-# Introduction to CapSense in ModusToolbox
+# Introduction to CapSense in ModusToolbox&trade;
 
 This repository contains exercises covered in the third session of trainings on ModusToolbox. It contains two exercises:
 
@@ -17,10 +17,13 @@ This repository contains exercises covered in the third session of trainings on 
 
 
 ## Supported Software
-* [ModusToolbox 2.1](https://www.cypress.com/products/modustoolbox-software-environment)
+* [ModusToolbox&trade; 2.1](https://www.cypress.com/products/modustoolbox-software-environment)
 
 ## Using the Material
 The file _CapSense_MTB_Training.pdf_ has the slides used in the training. The step by step instructions to import the exercises is provided below.
+
+## Training Video
+This blog post covering the training contents and the video can be obtained [here](https://community.cypress.com/t5/ModusToolbox-Blog/Session-3-Introduction-to-CapSense-in-ModusToolbox/ba-p/247014). 
 
 ### Importing the exercises:
 Here are the steps to import the projects into Eclipse IDE workspace
